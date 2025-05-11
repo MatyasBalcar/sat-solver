@@ -1,7 +1,10 @@
 import java.util.*;
 
 public class Solver {
-    public static Double[] main(String[] args) throws Exception {
+    public static void main(String[] args) throws Exception {
+        compute(args);
+    }
+    public static Double[] compute(String[] args) throws Exception {
         if (args.length != 1) {
             System.err.println("Použití: java Solver vstup.cnf");
             System.exit(1);

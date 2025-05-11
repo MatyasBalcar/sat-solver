@@ -1,9 +1,10 @@
 # SAT Solver (DPLL + Unit Propagation)
-
+```cd src```
 ## Sestavení
-javac *.java
+```javac *.java```
 ## Spuštění
-java Solver input.cnf
+```java Solver .\benchmarks\100vars\sat\1.cnf```
+
 
 ## Výstup
 - 1. řádek: SAT nebo UNSAT

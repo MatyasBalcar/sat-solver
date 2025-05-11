@@ -17,7 +17,7 @@ public class BatchSolver {
 
             String filename =path + "/" + prefix +  i + ".cnf";
             System.out.println("=== Solving " + filename + " ===");
-            temp = Solver.main(new String[]{filename});
+            temp = Solver.compute(new String[]{filename});
             totalTime += temp[0];
             unitPropagationCount += temp[1];
             System.out.println();
