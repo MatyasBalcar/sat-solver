@@ -23,7 +23,7 @@
 Napriklad
 - Pro vyreseni vsech 20 vars sat cnf
 ```aiignore
-java BatchSolver 1 999 benchmarks/100vars/sat/
+java BatchSolver 1 999 benchmarks/50vars/sat/
 
 ```
 - nemusime pouzivat prefix protoze defaultni file bereme 1-999.cnf
