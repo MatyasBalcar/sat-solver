@@ -42,9 +42,10 @@ public class Solver {
         System.out.printf("%.5f\n", solveTime);
         System.out.println(solver.unitPropagationCount);
         System.out.println(solver.decisionCount);
-        Double[] resultArray= new Double[]{0.0, 0.0};
+        Double[] resultArray= new Double[]{0.0, 0.0, 0.0};
         resultArray[0] = solveTime;
         resultArray[1] = Double.parseDouble(String.valueOf(solver.unitPropagationCount));
+        resultArray[2] = Double.parseDouble(String.valueOf(solver.decisionCount));
         return resultArray;
     }
 }

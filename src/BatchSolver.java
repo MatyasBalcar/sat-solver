@@ -5,6 +5,7 @@ public class BatchSolver {
         int count = end - start + 1;
         double totalTime = 0;
         double unitPropagationCount = 0;
+        double decisionCount = 0;
 
         String prefix = "";
         if (args.length > 3) {
@@ -20,10 +21,12 @@ public class BatchSolver {
             temp = Solver.compute(new String[]{filename});
             totalTime += temp[0];
             unitPropagationCount += temp[1];
+            decisionCount += temp[2];
             System.out.println();
         }
         System.out.println("Solved " + count + " problems");
-        System.out.printf("Average time: %.5f\nTotal time %.5f\n", totalTime/ count, totalTime);
-        System.out.printf("Average propagation count: %.5f\n", unitPropagationCount/count);
+        System.out.printf("Average time: %.3f\nTotal time %.3f\n", totalTime/ count, totalTime);
+        System.out.printf("Average propagation count: %.3f\n", unitPropagationCount/count);
+        System.out.printf("Average decision count: %.3f\n", decisionCount/count);
     }
 }
