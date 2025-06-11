@@ -1,7 +1,10 @@
 import java.util.*;
 
 public class Solver {
-    public static Double[] main(String[] args) throws Exception {
+    public static void main(String[] args) throws Exception {
+        compute(args);
+    }
+    public static Double[] compute(String[] args) throws Exception {
         if (args.length != 1) {
             System.err.println("Použití: java Solver vstup.cnf");
             System.exit(1);
@@ -39,9 +42,10 @@ public class Solver {
         System.out.printf("%.5f\n", solveTime);
         System.out.println(solver.unitPropagationCount);
         System.out.println(solver.decisionCount);
-        Double[] resultArray= new Double[]{0.0, 0.0};
+        Double[] resultArray= new Double[]{0.0, 0.0, 0.0};
         resultArray[0] = solveTime;
         resultArray[1] = Double.parseDouble(String.valueOf(solver.unitPropagationCount));
+        resultArray[2] = Double.parseDouble(String.valueOf(solver.decisionCount));
         return resultArray;
     }
 }
