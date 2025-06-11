@@ -1,9 +1,17 @@
 # SAT Solver (DPLL + Unit Propagation)
 
 ## Sestavení
+```aiignore
+cd src/ &&
 javac *.java
+```
+
 ## Spuštění
+
+```aiignore
 java Solver input.cnf
+```
+
 
 ## Výstup
 - 1. řádek: SAT nebo UNSAT
